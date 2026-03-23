@@ -4,7 +4,7 @@ Welcome to **Awesome AI DevStack**! 👋
 
 This is a curated, open-source collection of AI tools, large language model (LLM) libraries, and autonomous agents. 
 
-Whether you are building complex Python microservices, maintaining a React frontend, or optimizing models to run locally on your machine, this repository is designed to help you find the right tools to accelerate your development, automate workflows, and enhance your applications.
+Whether you are building complex backend microservices, maintaining web frontends, or optimizing models to run locally, this repository is designed to help you find the right tools to accelerate your development, automate workflows, and enhance your applications.
 
 ---
 
