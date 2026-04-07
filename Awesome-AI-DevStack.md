@@ -18,28 +18,33 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 📋 Table of Contents
 
-- [🧠 LLMs, Fine-Tuning & Infrastructure](#-llms-fine-tuning--infrastructure)
+- [🧠 AI Models, Fine-Tuning & Infrastructure](#-ai-models-fine-tuning--infrastructure)
 - [🤖 Autonomous Agents & Orchestration](#-autonomous-agents--orchestration)
 - [🧠 Agent Memory Systems](#-agent-memory-systems)
-- [🛠️ Development Tools & CLI](#-development-tools--cli)
-- [📊 Data Processing & RAG](#-data-processing--rag)
+- [🛠️ Development Tools, Infrastructure & CLI](#-development-tools-infrastructure--cli)
+- [📊 Data Processing, RAG & Visualization](#-data-processing-rag--visualization)
 - [🎨 UI Frameworks & Frontend](#-ui-frameworks--frontend)
-- [🔐 Security & Penetration Testing](#-security--penetration-testing)
+- [🔐 Security, OSINT & Penetration Testing](#-security-osint--penetration-testing)
 - [🎬 Media, 3D & Audio Generation](#-media-3d--audio-generation)
-- [🌐 Web Scraping & APIs](#-web-scraping--apis)
-- [💼 Finance & Operations](#-finance--operations)
+- [🌐 APIs, Networking & Web Scraping](#-apis-networking--web-scraping)
+- [💼 Business, Finance & Operations](#-business-finance--operations)
 - [📡 Sensors & Hardware Integrations](#-sensors--hardware-integrations)
 - [🎭 Virtual Characters & Avatars](#-virtual-characters--avatars)
-- [📚 Collections & Templates](#-collections--templates)
+- [📚 Learning, Collections & Templates](#-learning-collections--templates)
 
 ---
 
-## 🧠 LLMs, Fine-Tuning & Infrastructure
+## 🧠 AI Models, Fine-Tuning & Infrastructure
 
 ### [LiteLLM](https://github.com/BerriAI/litellm)
 
 - **What it does:** An API Gateway that allows you to call over 100 different LLMs (Claude, Gemini, Llama) using the standard OpenAI API format. It handles load balancing, fallbacks, authentication, and cost tracking.
 - **Use Cases:** Setting up real-time model fallbacks (e.g., routing to Anthropic if OpenAI fails) without changing application code; enforcing team budget controls and rate limits for internal developers.
+
+### [TimesFM](https://github.com/google-research/timesfm)
+
+- **What it does:** A pre-trained foundation model by Google Research specifically designed for time-series forecasting. Unlike LLMs, it analyzes historical numerical trends to predict future values with high accuracy (Zero-shot).
+- **Use Cases:** Forecasting server traffic and load spikes to trigger proactive auto-scaling; analyzing historical e-commerce sales trends to predict future product demand.
 
 ### [Unsloth](https://github.com/unslothai/unsloth)
 
@@ -74,6 +79,33 @@ Whether you are building complex backend microservices, maintaining web frontend
 ---
 
 ## 🤖 Autonomous Agents & Orchestration
+
+### [Block Goose](https://github.com/block/goose)
+
+- **What it does:** An open-source, autonomous AI development agent created by Block. Unlike standard autocomplete extensions, Goose runs directly on your machine (via CLI or Desktop app). It can read/write files, execute system commands, identify and fix bugs, and verify results. It is LLM-agnostic and fully supports the Model Context Protocol (MCP) for seamless integration with external tools.
+- **Use Cases:** \* **Terminal Debugging Automation:** Trigger the agent when a build crashes. It reads the error logs, resolves dependency conflicts, modifies the source code, and recompiles the project to verify the fix.
+  - **Rapid Project Scaffolding:** Request a complete backend setup (e.g., a Node.js server with PostgreSQL and CRUD endpoints) via natural language, and the agent will generate the folder structure, logic, configs, and unit tests.
+  - **MCP Workflow Integration:** Connect the agent to internal MCP servers so it can read product requirements directly from Jira tickets, translate them into code, and push the final commits to Git.
+
+### [OpenAI Codex CLI](https://github.com/openai/codex)
+
+- **What it does:** The official coding agent by OpenAI that runs directly in your local terminal. It can execute complex file reads, write code, run system commands, and debug using natural language.
+- **Use Cases:** Automating project management by having the agent locate and fix compilation errors across multiple files simultaneously; rapidly scaffolding new projects (like Node.js) by verbally commanding the agent to install dependencies and write configurations.
+
+### [Oh My Codex](https://github.com/Yeachan-Heo/oh-my-codex)
+
+- **What it does:** An orchestration and workflow layer built on top of the official OpenAI Codex terminal agent. It adds persistent memory, predefined persona prompts (e.g., "Architect" or "Executor"), and automated skills.
+- **Use Cases:** Establishing a "brain folder" so the agent remembers previous bugs, command history, and coding standards across sessions; orchestrating virtual automation teams by splitting large development tasks among multiple synchronized agent instances.
+
+### [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)
+
+- **What it does:** A groundbreaking framework enabling AI models to conduct fully autonomous scientific research. It generates hypotheses, writes code for experiments, analyzes results, and drafts full academic papers.
+- **Use Cases:** Automated algorithm benchmarking and performance comparisons; conducting autonomous literature reviews to distill conclusions for product planning.
+
+### [ChatDev](https://github.com/OpenBMB/ChatDev)
+
+- **What it does:** A virtual software company simulation. It utilizes multiple AI agents playing different roles (CEO, PM, Dev, QA) who collaborate and converse to write and compile working software from a single prompt.
+- **Use Cases:** Rapid prototyping to generate folder structures, basic logic, and documentation in minutes; experimenting with multi-agent communication architectures to reduce LLM hallucinations.
 
 ### [Oh My ClaudeCode](https://github.com/Yeachan-Heo/oh-my-claudecode)
 
@@ -156,7 +188,12 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ---
 
-## 🛠️ Development Tools & CLI
+## 🛠️ Development Tools, Infrastructure & CLI
+
+### [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+
+- **What it does:** A CLI tool written in C that displays system information (hardware, OS, kernel, RAM) instantly with aesthetic ASCII art. It is the modern, highly performant successor to Neofetch.
+- **Use Cases:** Configuring Linux servers to display a quick visual summary of system health upon SSH login; appending hardware specs automatically to crash report logs.
 
 ### [systemd](https://github.com/systemd/systemd)
 
@@ -195,7 +232,17 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ---
 
-## 📊 Data Processing & RAG
+## 📊 Data Processing, RAG & Visualization
+
+### [Apache Superset](https://github.com/apache/superset)
+
+- **What it does:** An enterprise-grade, open-source data exploration and visualization platform. It connects to nearly any SQL database to create interactive dashboards (an alternative to Tableau/PowerBI).
+- **Use Cases:** Creating complex business dashboards for real-time sales and network performance; embedding analytics charts directly into customer-facing SaaS products.
+
+### [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+
+- **What it does:** A production-grade Optical Character Recognition (OCR) framework by Baidu. It supports 80+ languages with incredible accuracy for extracting text from images and complex documents.
+- **Use Cases:** Automating KYC workflows by parsing IDs and licenses directly into databases; deploying lightweight models to mobile/edge devices to read barcodes in poor lighting conditions.
 
 ### [Onyx](https://github.com/onyx-dot-app/onyx)
 
@@ -238,7 +285,12 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ---
 
-## 🔐 Security & Penetration Testing
+## 🔐 Security, OSINT & Penetration Testing
+
+### [Sherlock](https://github.com/sherlock-project/sherlock)
+
+- **What it does:** A powerful Open-Source Intelligence (OSINT) CLI tool. It takes a username and concurrently scans over 300 social networks and websites to locate registered accounts.
+- **Use Cases:** Brand protection and tracking down impersonators across platforms; assisting InfoSec teams in gathering intelligence or conducting background checks.
 
 ### [Strix](https://github.com/usestrix/strix)
 
@@ -253,6 +305,11 @@ Whether you are building complex backend microservices, maintaining web frontend
 ---
 
 ## 🎬 Media, 3D & Audio Generation
+
+### [OpenScreen](https://github.com/siddharthvaddem/openscreen)
+
+- **What it does:** An open-source alternative to premium screen recording software for creating professional-grade video demonstrations. It provides automatic zoom-ins, cursor tracking, and styled backgrounds.
+- **Use Cases:** Recording sleek, aesthetic onboarding tutorials for internal enterprise platforms; creating high-quality demo animations for landing pages and marketing.
 
 ### [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)
 
@@ -286,7 +343,12 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ---
 
-## 🌐 Web Scraping & APIs
+## 🌐 APIs, Networking & Web Scraping
+
+### [Axios](https://github.com/axios/axios)
+
+- **What it does:** One of the most popular promise-based HTTP clients for JavaScript. It facilitates client-server communication with built-in features for intercepting requests, error handling, and JSON transformation.
+- **Use Cases:** Handling client-server communication in React applications to fetch database records; centralizing authentication by using interceptors to automatically attach JWT tokens to outgoing API requests.
 
 ### [Lightpanda Browser](https://github.com/lightpanda-io/browser)
 
@@ -295,7 +357,12 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ---
 
-## 💼 Finance & Operations
+## 💼 Business, Finance & Operations
+
+### [Twenty](https://github.com/twentyhq/twenty)
+
+- **What it does:** A modern, open-source CRM platform built as a self-hostable alternative to giants like Salesforce and HubSpot, ensuring total data ownership.
+- **Use Cases:** Establishing a secure, internal CRM to handle sensitive customer data while eliminating per-seat licensing costs; building custom automations via its GraphQL API to sync internal apps with client records.
 
 ### [Dexter](https://github.com/virattt/dexter)
 
@@ -337,7 +404,32 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ---
 
-## 📚 Collections & Templates
+## 📚 Learning, Collections & Templates
+
+### [System Prompts Leaks](https://github.com/asgeirtj/system_prompts_leaks)
+
+- **What it does:** A popular archive compiling leaked or extracted system prompts from major industry AI models (ChatGPT, Claude, Gemini, Copilot).
+- **Use Cases:** Researching how tech giants formulate guardrails and behavior constraints to apply similar techniques to private AI apps; red-teaming internal chatbots to prevent prompt injection attacks.
+
+### [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp)
+
+- **What it does:** The complete open-source codebase for one of the world's largest free coding platforms, including its curriculum, automated testing engine, and site architecture.
+- **Use Cases:** Forking the repository to build custom internal training and onboarding portals for junior developers; gaining practical experience contributing to a massive Node/React codebase.
+
+### [Coding Interview University](https://github.com/jwasham/coding-interview-university)
+
+- **What it does:** A comprehensive, multi-month syllabus designed to prepare developers (even without a CS degree) for rigorous technical interviews at FAANG companies. Covers data structures, algorithms, and system design.
+- **Use Cases:** Self-studying fundamental CS theory to improve daily coding efficiency; structuring fair, challenging, and well-rounded technical assessments for hiring processes.
+
+### [Claude How-to](https://github.com/luongnv89/claude-howto)
+
+- **What it does:** A centralized repository containing guides, optimized prompts, and best-practice workflows for getting the most out of Anthropic's Claude models.
+- **Use Cases:** Utilizing prompt templates to guide Claude through complex debugging tasks without hallucinating; learning techniques to manage massive context windows (e.g., hundreds of files) effectively.
+
+### [Claude Code Best Practice](https://github.com/shanraisshan/claude-code-best-practice)
+
+- **What it does:** A dedicated repository for best practices when using the autonomous `claude-code` CLI agent. Covers configuration, safe environment management, and automation tips.
+- **Use Cases:** Setting up robust `.claudesignore` files to prevent the agent from accidentally modifying sensitive configurations or build folders; breaking down large test-driven refactoring jobs safely.
 
 ### [Everything Claude Code](https://github.com/affaan-m/everything-claude-code)
 
