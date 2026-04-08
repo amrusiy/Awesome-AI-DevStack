@@ -35,6 +35,14 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 🧠 AI Models, Fine-Tuning & Infrastructure
 
+### [Ollama](https://github.com/ollama/ollama)
+* **What it does:** A highly popular framework and runtime for downloading, managing, and running large language models (LLMs) locally on Mac, Linux, and Windows. It packages models into manageable artifacts (similar to Docker) and provides a fast, simple local API.
+* **Use Cases:** Serving as the secure, local AI engine for internal RAG applications without sending sensitive enterprise data to the cloud; pairing with IDE extensions (like Continue.dev) to create a fully offline, private coding assistant alternative to Copilot.
+
+### [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery)
+* **What it does:** An open-source app (Android/iOS) developed by Google's AI Edge team. It serves as a playground for running LLMs and computer vision models (like Gemma 4) entirely on-device, demonstrating multimodal offline capabilities with strict privacy preservation.
+* **Use Cases:** Mobile benchmarking to test how different model versions impact device memory and battery consumption; offline computer vision to parse physical documents or equipment faults in environments with no cellular coverage.
+
 ### [LiteLLM](https://github.com/BerriAI/litellm)
 * **What it does:** An API Gateway that allows you to call over 100 different LLMs (Claude, Gemini, Llama) using the standard OpenAI API format. It handles load balancing, fallbacks, authentication, and cost tracking.
 * **Use Cases:** Setting up real-time model fallbacks (e.g., routing to Anthropic if OpenAI fails) without changing application code; enforcing team budget controls and rate limits for internal developers.
@@ -71,6 +79,14 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 🤖 Autonomous Agents & Orchestration
 
+### [Goose](https://github.com/aaif-goose/goose)
+* **What it does:** An open-source, autonomous AI development agent (originally created by Block). It runs directly on your machine (via CLI or Desktop app) to read/write files, execute system commands, identify and fix bugs, and verify results. It is LLM-agnostic and fully supports the Model Context Protocol (MCP) for seamless integration with external tools.
+* **Use Cases:** Triggering the agent when a build crashes to read error logs, resolve dependencies, modify code, and recompile; rapidly scaffolding new backend servers via natural language; connecting to internal MCP servers to read Jira tickets and push corresponding code to Git.
+
+### [Pi-mono](https://github.com/badlogic/pi-mono)
+* **What it does:** A minimalist and modular toolkit for building AI agents, created by Mario Zechner. It provides a unified environment including a CLI, TUI, Web UI, and a Slack bot. It emphasizes flexibility by allowing custom scripts (Skills) and commands without altering the core code.
+* **Use Cases:** Running the built-in agent directly in the terminal to read files, write code, and execute system commands for on-the-fly debugging; deploying the built-in Slack bot for automated, team-wide code reviews triggered via chat.
+
 ### [OpenAI Codex CLI](https://github.com/openai/codex)
 * **What it does:** The official coding agent by OpenAI that runs directly in your local terminal. It can execute complex file reads, write code, run system commands, and debug using natural language.
 * **Use Cases:** Automating project management by having the agent locate and fix compilation errors across multiple files simultaneously; rapidly scaffolding new projects (like Node.js) by verbally commanding the agent to install dependencies and write configurations.
@@ -88,8 +104,8 @@ Whether you are building complex backend microservices, maintaining web frontend
 * **Use Cases:** Rapid prototyping to generate folder structures, basic logic, and documentation in minutes; experimenting with multi-agent communication architectures to reduce LLM hallucinations.
 
 ### [Oh My ClaudeCode](https://github.com/Yeachan-Heo/oh-my-claudecode)
-* **What it does:** An orchestration system for running multiple Claude Code developer agents in parallel. It supports hierarchical team structures (e.g., a "Project Manager" agent dividing tasks between "Frontend" and "Backend" agents).
-* **Use Cases:** Large-scale project development where agents work concurrently (e.g., building APIs while writing tests); massive legacy code refactoring without collision.
+* **What it does:** An orchestration system for running multiple Claude Code developer agents in parallel. It supports hierarchical team structures.
+* **Use Cases:** Large-scale project development where agents work concurrently; massive legacy code refactoring without collision.
 
 ### [Open SWE](https://github.com/langchain-ai/open-swe)
 * **What it does:** An open-source Software Engineering Agent that reads GitHub issues, scans source code, writes a fix, and submits Pull Requests autonomously.
@@ -335,6 +351,14 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 📚 Learning, Collections & Templates
 
+### [Telegram Desktop (tdesktop)](https://github.com/telegramdesktop/tdesktop)
+* **What it does:** The official open-source codebase for the Telegram desktop client. Written primarily in C++ and Qt, it serves as a masterclass in building highly secure, cross-platform messaging apps capable of handling massive cloud data synchronization.
+* **Use Cases:** Forking the codebase to develop secure, branded internal communication tools for enterprise or defense organizations; customizing the local client to intercept financial trading alerts and trigger local desktop automation scripts with zero latency.
+
+### [Obsidian Skills](https://github.com/kepano/obsidian-skills)
+* **What it does:** A collection of Agent Skills configuration files created by the CEO of Obsidian. They teach AI agents (like Claude Code) how to correctly interact with Obsidian Vaults, ensuring they respect internal Wikilinks, Canvas structures, and Frontmatter syntax without breaking the knowledge graph.
+* **Use Cases:** Commanding an agent to scan meeting notes and auto-generate structured `.canvas` visual maps; instructing an agent to clean up raw text files, apply correct metadata, and securely link them to central index notes.
+
 ### [System Prompts Leaks](https://github.com/asgeirtj/system_prompts_leaks)
 * **What it does:** A popular archive compiling leaked or extracted system prompts from major industry AI models (ChatGPT, Claude, Gemini, Copilot).
 * **Use Cases:** Researching how tech giants formulate guardrails and behavior constraints to apply similar techniques to private AI apps; red-teaming internal chatbots to prevent prompt injection attacks.
@@ -376,4 +400,4 @@ Whether you are building complex backend microservices, maintaining web frontend
 ## 🤝 Contributing
 Found a cool AI tool that speeds up your workflow? We'd love to add it! Feel free to open a Pull Request with the tool's link, what it does, and a quick example of how you use it.
 
-*Built and maintained as an open-source knowledge base for the developer community.*te
+*Built and maintained as an open-source knowledge base for the developer community.*
