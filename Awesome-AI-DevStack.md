@@ -1,4 +1,3 @@
-```markdown
 # 🚀 Awesome AI DevStack
 
 Welcome to **Awesome AI DevStack**! 👋
@@ -36,6 +35,16 @@ Whether you are building complex backend microservices, maintaining web frontend
 ---
 
 ## 🧠 AI Models, Fine-Tuning & Infrastructure
+
+### [Thunderbolt](https://github.com/thunderbird/thunderbolt)
+
+- **What it does:** An enterprise open-source AI client by Mozilla. It allows organizations to use LLMs securely without vendor lock-in, supporting self-hosting or routing to multiple models through a single interface while maintaining 100% data control.
+- **Use Cases:** Deploying an isolated AI environment on local servers for secure code analysis; providing seamless fallback between model providers (e.g., OpenAI to Anthropic) without rewriting application integrations.
+
+### [Kronos](https://github.com/shiyu-coder/Kronos)
+
+- **What it does:** A pre-trained foundation model specifically designed to understand financial markets and perform advanced time-series forecasting. Unlike general LLMs, it is built to analyze numerical trends, historical data, and financial reports with high precision.
+- **Use Cases:** Macro trend forecasting by feeding it inflation rates, interest rates, and commodity prices for quarterly risk assessment; automated market sentiment analysis by simultaneously processing thousands of stock exchange reports to score sector stability.
 
 ### [Ollama](https://github.com/ollama/ollama)
 
@@ -91,9 +100,39 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 🤖 Autonomous Agents & Orchestration
 
+### [Evolver (EvoMap)](https://github.com/EvoMap/evolver)
+
+- **What it does:** An "evolution" engine for AI agents based on Genetic Programming (GEP). Instead of developers manually tweaking prompts and losing track, this system makes prompt improvement structured and auditable. It scans logs and errors, then "evolves" a refined prompt to help the agent succeed in future tasks.
+- **Use Cases:** Improving autonomous chatbot performance by analyzing frequent task failures and evolving new instructions automatically; maintaining a cryptographically auditable version control system for enterprise prompt engineering.
+
+### [Arc-Kit](https://github.com/tractorjuice/arc-kit)
+
+- **What it does:** An advanced toolkit for Enterprise Architecture designed to replace scattered documentation with AI-driven workflows. Running as a plugin for Claude Code, it features independent research agents and MCPs for architecture design review and vendor analysis.
+- **Use Cases:** Automating technological Code Reviews when migrating to Microservices to assess risks based on company guidelines; deploying an algorithmic vendor-research agent to scrape technical docs and generate unbiased comparative reports.
+
+### [OpenAI Agents Python](https://github.com/openai/openai-agents-python)
+
+- **What it does:** The official OpenAI SDK (replacing Swarm) for developing multi-agent workflows. It solves complex orchestration challenges including agent memory management, seamless task handoffs between different agents, and secure sandbox execution environments.
+- **Use Cases:** Orchestrating an automated development pipeline where a "Researcher" agent gathers data, hands it off to an "Analyst" agent to execute Python code, and a "Writer" agent summarizes the final executive report; establishing secure tool-calling limits to allow an agent to safely access CRM endpoints only under specific business logic.
+
+### [GenericAgent](https://github.com/lsdefine/GenericAgent)
+
+- **What it does:** A minimalist and powerful framework (only ~3,000 lines of code) for building self-evolving autonomous agents. It grants the agent full physical and logical control over a local machine—including screen reading, mouse movement, typing, and file management—allowing the agent to "learn" tasks rather than requiring hardcoded logic.
+- **Use Cases:** Automating closed legacy systems with no APIs by having the agent visually navigate the UI to extract data to Excel; conducting autonomous UI/UX testing by commanding the agent to "try to complete a purchase" and reporting if the visual flow breaks.
+
+### [Open Agents (Vercel)](https://github.com/vercel-labs/open-agents)
+
+- **What it does:** An open-source template by Vercel for building, deploying, and managing cloud-based AI agents. Built on Next.js, it provides an elegant UI, chat history persistence, and easy integrations with various LLM providers.
+- **Use Cases:** Rapidly deploying a customized, secure internal enterprise chatbot under a company domain; utilizing the boilerplate to build an AI customer service SaaS where users interact with agents to resolve billing or scheduling issues.
+
+### [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+
+- **What it does:** A robust configuration and prompt framework designed to turn the Claude Code terminal agent into a complete "virtual game studio." It instructs the agent on how to adopt multiple roles (Producer, Engine Programmer, Designer) to orchestrate game development from scratch.
+- **Use Cases:** Rapidly scaffolding small visual simulations or games for training purposes (e.g., a physics engine in JS) with the agent managing logic and assets; studying multi-role prompting architectures to apply the same concept to enterprise software (e.g., setting roles like "DBA," "Security Researcher," and "Web Dev").
+
 ### [Goose](https://github.com/aaif-goose/goose)
 
-- **What it does:** An open-source, autonomous AI development agent (originally created by Block). It runs directly on your machine (via CLI or Desktop app) to read/write files, execute system commands, identify and fix bugs, and verify results. It is LLM-agnostic and fully supports the Model Context Protocol (MCP) for seamless integration with external tools.
+- **What it does:** An open-source, autonomous AI development agent (originally created by Block). It runs directly on your machine (via CLI or Desktop app) to read/write files, execute system commands, identify and fix bugs, and verify results. It is LLM-agnostic and fully supports the Model Context Protocol (MCP).
 - **Use Cases:** Triggering the agent when a build crashes to read error logs, resolve dependencies, modify code, and recompile; rapidly scaffolding new backend servers via natural language; connecting to internal MCP servers to read Jira tickets and push corresponding code to Git.
 
 ### [Pi-mono](https://github.com/badlogic/pi-mono)
@@ -104,12 +143,12 @@ Whether you are building complex backend microservices, maintaining web frontend
 ### [OpenAI Codex CLI](https://github.com/openai/codex)
 
 - **What it does:** The official coding agent by OpenAI that runs directly in your local terminal. It can execute complex file reads, write code, run system commands, and debug using natural language.
-- **Use Cases:** Automating project management by having the agent locate and fix compilation errors across multiple files simultaneously; rapidly scaffolding new projects (like Node.js) by verbally commanding the agent to install dependencies and write configurations.
+- **Use Cases:** Automating project management by having the agent locate and fix compilation errors across multiple files simultaneously; rapidly scaffolding new projects.
 
 ### [Oh My Codex](https://github.com/Yeachan-Heo/oh-my-codex)
 
-- **What it does:** An orchestration and workflow layer built on top of the official OpenAI Codex terminal agent. It adds persistent memory, predefined persona prompts (e.g., "Architect" or "Executor"), and automated skills.
-- **Use Cases:** Establishing a "brain folder" so the agent remembers previous bugs, command history, and coding standards across sessions; orchestrating virtual automation teams by splitting large development tasks among multiple synchronized agent instances.
+- **What it does:** An orchestration and workflow layer built on top of the official OpenAI Codex terminal agent. It adds persistent memory, predefined persona prompts, and automated skills.
+- **Use Cases:** Establishing a "brain folder" so the agent remembers previous bugs, command history, and coding standards across sessions; orchestrating virtual automation teams.
 
 ### [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)
 
@@ -119,7 +158,7 @@ Whether you are building complex backend microservices, maintaining web frontend
 ### [ChatDev](https://github.com/OpenBMB/ChatDev)
 
 - **What it does:** A virtual software company simulation. It utilizes multiple AI agents playing different roles (CEO, PM, Dev, QA) who collaborate and converse to write and compile working software from a single prompt.
-- **Use Cases:** Rapid prototyping to generate folder structures, basic logic, and documentation in minutes; experimenting with multi-agent communication architectures to reduce LLM hallucinations.
+- **Use Cases:** Rapid prototyping to generate folder structures, basic logic, and documentation in minutes.
 
 ### [Oh My ClaudeCode](https://github.com/Yeachan-Heo/oh-my-claudecode)
 
@@ -204,6 +243,16 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 🛠️ Development Tools, Infrastructure & CLI
 
+### [Langfuse](https://github.com/langfuse/langfuse)
+
+- **What it does:** An open-source LLM Observability and evaluation platform (LLM Ops). It allows developers to trace exactly how long models take to reason, inspect actual prompt payloads, and map connections between agents behind the scenes—complete with cost and quality metrics.
+- **Use Cases:** Identifying bottlenecks by tracing database-querying agents that take over 10 seconds to respond; conducting A/B testing on system prompts in production to determine which version uses fewer tokens while yielding better outputs.
+
+### [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+
+- **What it does:** An official Model Context Protocol (MCP) server providing AI agents with direct access to Chrome DevTools capabilities. It allows agents to inspect live websites, analyze the DOM tree, monitor network errors, and execute scripts in the browser console.
+- **Use Cases:** Autonomous frontend debugging where an agent navigates to a broken UI component, inspects the Network tab for CORS or 500 errors, and traces it back to the source code; running codeless End-to-End tests where the AI visually interacts with a site and parses JavaScript console logs before production deployments.
+
 ### [Harbor](https://github.com/goharbor/harbor)
 
 - **What it does:** A leading enterprise-grade open-source container registry managed by the CNCF. It stores Docker images and Helm charts, offering advanced Role-Based Access Control (RBAC), cryptographic image signing, and automated vulnerability scanning.
@@ -258,6 +307,16 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 📊 Data Processing, RAG & Visualization
 
+### [Claude Context](https://github.com/zilliztech/claude-context)
+
+- **What it does:** An open-source MCP plugin by Zilliz designed to solve context overflow when navigating massive codebases. It indexes local repositories into a targeted vector database and retrieves only the code snippets relevant to the prompt.
+- **Use Cases:** Enabling AI agents to navigate and debug legacy code with millions of lines in milliseconds; drastically reducing API costs by extracting and sending 100 relevant lines of code instead of feeding the entire repository into the context window.
+
+### [RAG-Anything](https://github.com/HKUDS/RAG-Anything)
+
+- **What it does:** An innovative architecture expanding Retrieval-Augmented Generation (RAG) beyond text. It can index and query across any media type (images, video, audio, complex PDFs) and fuse them as context for the LLM.
+- **Use Cases:** Building visual search engines for recorded training sessions (e.g., "Find the video frame where the server flowchart was shown"); creating multimodal tech support systems that cross-reference user photos with engineering schematics.
+
 ### [Apache Superset](https://github.com/apache/superset)
 
 - **What it does:** An enterprise-grade, open-source data exploration and visualization platform. It connects to nearly any SQL database to create interactive dashboards (an alternative to Tableau/PowerBI).
@@ -311,6 +370,21 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 🔐 Security, OSINT & Penetration Testing
 
+### [WorldMonitor](https://github.com/koala73/worldmonitor)
+
+- **What it does:** An open-source, real-time OSINT dashboard. It aggregates global news, geopolitical signals, and infrastructure data into an interactive 3D map, utilizing local LLMs (like Ollama) to summarize events and find correlations.
+- **Use Cases:** Operating a crisis management SOC to track global supply chain disruptions; monitoring physical threats like power outages near remote server farm locations.
+
+### [TrendRadar](https://github.com/sansan0/TrendRadar)
+
+- **What it does:** An AI assistant for monitoring public opinion and trends. It autonomously scrapes RSS feeds, forums, and social networks, uses AI to filter out noise, summarizes key updates, and pushes alerts to Telegram or Slack.
+- **Use Cases:** Monitoring competitor reputation to trigger alerts during PR crises; generating daily cyber-intelligence briefs specifically tailored to zero-day vulnerabilities affecting your tech stack.
+
+### [Magika](https://github.com/google/magika)
+
+- **What it does:** An AI-based tool by Google for blazing-fast, highly accurate file type detection. Using a tiny deep learning model operating in microseconds, it reads the internal structure of files to determine their true type, rather than relying on easily spoofed file extensions.
+- **Use Cases:** Securing production file upload servers by verifying that a `.jpg` file is not actually a malicious Python or Bash script in disguise; organizing massive enterprise cloud storage environments where documents have lost their correct file extensions over time.
+
 ### [Sherlock](https://github.com/sherlock-project/sherlock)
 
 - **What it does:** A powerful Open-Source Intelligence (OSINT) CLI tool. It takes a username and concurrently scans over 300 social networks and websites to locate registered accounts.
@@ -329,6 +403,11 @@ Whether you are building complex backend microservices, maintaining web frontend
 ---
 
 ## 🎬 Media, 3D & Audio Generation
+
+### [Voicebox](https://github.com/jamiepine/voicebox)
+
+- **What it does:** A local, open-source desktop application for voice cloning and Text-to-Speech (TTS) generation. Functioning as a local-first alternative to commercial tools like ElevenLabs, it runs entirely offline, supports various open speech models, and features a timeline editor for splicing audio clips together.
+- **Use Cases:** Automating high-quality voiceovers for hardware system alerts or product tutorials without paying for studio time or API subscriptions; creating scripts that automatically convert company technical blog posts into studio-quality podcast episodes.
 
 ### [PersonaPlex](https://github.com/NVIDIA/personaplex)
 
@@ -379,6 +458,26 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 🌐 APIs, Networking & Web Scraping
 
+### [RustDesk](https://github.com/rustdesk/rustdesk)
+
+- **What it does:** An open-source remote desktop software written in Rust. It serves as a secure alternative to TeamViewer or AnyDesk, allowing you to host your own private rendezvous/relay server for end-to-end encrypted traffic without relying on third-party servers.
+- **Use Cases:** Establishing a private technical support infrastructure; securely managing headless virtual servers in double-NAT environments without complex firewall rules.
+
+### [Pi-hole](https://github.com/pi-hole/pi-hole)
+
+- **What it does:** A local DNS sinkhole that protects your network from telemetry, tracking, and advertisements before they reach browsers or smart devices. _(Note: For a practical hardware setup guide, look up the "Simplest Pi-hole Tutorial" on YouTube)_.
+- **Use Cases:** Securing office networks from phishing and ads without installing endpoint software; blocking aggressive telemetry from proprietary software in production environments to save bandwidth and increase privacy.
+
+### [Xray-core](https://github.com/XTLS/Xray-core)
+
+- **What it does:** A core proxy networking project (part of Project X) designed to bypass deep packet inspection (DPI) and state-level firewalls. It uses advanced protocols (VLESS, XTLS) to camouflage VPN traffic as standard HTTPS web browsing.
+- **Use Cases:** Maintaining encrypted communication channels in heavily censored regions; masking sensitive internal server-to-server traffic across international submarine cables to prevent packet analysis.
+
+### [Public APIs](https://github.com/public-apis/public-apis)
+
+- **What it does:** One of the most popular community-maintained repositories on GitHub, indexing a massive list of free APIs available for software developers. Categories range from payment processing and cyber security to weather, facial recognition, and cryptocurrency.
+- **Use Cases:** Rapidly prototyping applications (e.g., live exchange rate trackers or maps) without paying for commercial data APIs; enriching user data by connecting registration forms to free APIs that verify if an email address is temporary or disposable.
+
 ### [Axios](https://github.com/axios/axios)
 
 - **What it does:** One of the most popular promise-based HTTP clients for JavaScript. It facilitates client-server communication with built-in features for intercepting requests, error handling, and JSON transformation.
@@ -392,6 +491,11 @@ Whether you are building complex backend microservices, maintaining web frontend
 ---
 
 ## 💼 Business, Finance & Operations
+
+### [FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal)
+
+- **What it does:** An open-source financial research application and data terminal (similar to a Bloomberg Terminal) built with C++/Qt. It provides market analysis, investment research, and macroeconomic data access.
+- **Use Cases:** Extracting historical stock market data for competitive analysis; feeding algorithmic Python trading bots with deep historical order book data.
 
 ### [Twenty](https://github.com/twentyhq/twenty)
 
@@ -422,6 +526,11 @@ Whether you are building complex backend microservices, maintaining web frontend
 
 ## 📡 Sensors & Hardware Integrations
 
+### [Omi](https://github.com/BasedHardware/omi)
+
+- **What it does:** An open-source hardware and software project for building a wearable AI pendant. It streams audio and visual data from the physical environment to AI models to provide augmented memory, meeting summaries, and real-time contextual analysis.
+- **Use Cases:** Using the open PCB schematics and source code to prototype custom voice-based IoT devices (like smart microphones for industrial spaces or vehicles); building wearable transcription tools for field engineers that automatically sync meeting minutes to enterprise project management software.
+
 ### [WiFi DensePose](https://github.com/ruvnet/wifi-densepose)
 
 - **What it does:** Turns commodity WiFi signals into real-time human pose estimation and vital sign monitoring without cameras.
@@ -439,6 +548,26 @@ Whether you are building complex backend microservices, maintaining web frontend
 ---
 
 ## 📚 Learning, Collections & Templates
+
+### [AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)
+
+- **What it does:** A 12-lesson academic and practical course by Microsoft designed for developers. It teaches the core architectures needed to build AI agents, from basic tool calling to complex multi-agent orchestrations.
+- **Use Cases:** Training backend teams to transition from standard APIs to AI-driven reasoning workflows; understanding the theory behind secure agent sandboxing.
+
+### [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills)
+
+- **What it does:** A collection of ready-to-use "Skills" and system rules for AI agents (like Cursor or Claude Code). These rules teach agents standard testing practices, code organization, and how to avoid generating "slop" or spaghetti code.
+- **Use Cases:** Enforcing UI standardization by commanding the agent to strictly use designated design libraries; applying anti-hallucination guardrails to prevent accidental code deletion during massive refactoring.
+
+### [Dive into LLMs](https://github.com/Lordog/dive-into-llms)
+
+- **What it does:** An in-depth technical and educational guide designed to deconstruct and explain how Large Language Models (LLMs) operate under the hood. It covers everything from Transformer architecture and Attention mechanisms to the core mathematical foundations of intelligent text generation.
+- **Use Cases:** Utilizing the repository as a master syllabus to train backend engineers in Machine Learning infrastructure, enabling them to transition from basic prompt writing to model fine-tuning; understanding context limitations deeply to debug issues where coding agents lose logical flow.
+
+### [Claude Cookbooks](https://github.com/anthropics/claude-cookbooks)
+
+- **What it does:** The official, regularly updated repository by Anthropic containing notebooks, code snippets, and best practices for integrating Claude models into complex systems. It covers advanced topics like tool-use and document parsing.
+- **Use Cases:** Learning from official examples how to build efficient RAG architectures that feed massive enterprise database chunks to Claude without hitting token limits; standardizing internal prompt engineering to guarantee valid JSON outputs in production environments.
 
 ### [DeepTutor](https://github.com/HKUDS/DeepTutor)
 
@@ -512,4 +641,3 @@ Whether you are building complex backend microservices, maintaining web frontend
 Found a cool AI tool that speeds up your workflow? We'd love to add it! Feel free to open a Pull Request with the tool's link, what it does, and a quick example of how you use it.
 
 _Built and maintained as an open-source knowledge base for the developer community._
-```
