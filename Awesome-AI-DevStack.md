@@ -283,6 +283,10 @@ Whether you are building complex backend microservices, maintaining web frontend
 * **What it does:** A CLI tool for evaluating, testing, and optimizing LLM prompts and outputs to prevent hallucinations.
 * **Use Cases:** Writing safety tests for AI-generated SQL queries; automating QA checks for enterprise chatbots.
 
+### [Agent QA](https://github.com/vostride/agent-qa)
+* **What it does:** A QA agent that runs natural-language web and mobile tests with persistent test memory, self-healing flows, and evidence-backed results.
+* **Use Cases:** Giving coding agents repeatable application regression checks through MCP and bundled skills; triaging failures from screenshots, logs, artifacts, and classifications.
+
 ### [workerd](https://github.com/cloudflare/workerd)
 * **What it does:** The open-source, V8-based runtime that powers Cloudflare Workers, allowing you to run serverless JavaScript/Wasm locally.
 * **Use Cases:** Handling high-volume webhooks instantly before passing filtered data to backend servers.
