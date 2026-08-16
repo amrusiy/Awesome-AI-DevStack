@@ -65,6 +65,12 @@ Whether you are building complex backend microservices, maintaining web frontend
   * **Rapid Microservice Scaffolding:** Generate folder structures, configuration files, and database connections for new microservices in seconds.
   * **Deployment Automation:** Build automated scripts that package and deploy application updates to a server with a single command.
 
+### [Agent QA](https://github.com/vostride/agent-qa)
+* **What it does:** A QA agent that runs natural-language web and mobile tests with persistent test memory, self-healing flows, and evidence-backed results.
+* **Applications & Examples:**
+  * **Agent-Assisted Regression:** Give coding agents repeatable application checks through the bundled MCP server and skills.
+  * **Failure Triage:** Inspect screenshots, logs, artifacts, and failure classifications after a test run.
+
 ---
 
 ## 📊 Data Processing & RAG
